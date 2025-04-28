@@ -4,10 +4,10 @@
     <section class="py-20 bg-gray-50">
       <div class="container mx-auto px-4 text-center">
         <h1 class="text-4xl md:text-5xl font-display font-light text-primary mb-6 animate-fade-in">
-          Portfolio
+          我的作品，來自每一段用心的設計旅程
         </h1>
         <p class="text-xl text-secondary max-w-2xl mx-auto animate-fade-in" style="animation-delay: 0.2s">
-          A collection of my latest projects and creative endeavors.
+          這裡收藏了我在不同領域裡，用設計記錄的每一次精彩。
         </p>
       </div>
     </section>
@@ -103,9 +103,9 @@
           <!-- Close Button -->
           <button 
             @click="closePreview"
-            class="absolute -top-3 -right-3 z-10 p-2 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+            class="fixed top-4 right-4 z-50 p-3 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
           >
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
@@ -150,7 +150,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const categories = ['All', '品牌設計', '電商設計', '社群設計', 'AI設計']
+const categories = ['All', '貼文設計', '印刷品', 'AI設計']
 const activeCategory = ref('All')
 const selectedWork = ref(null)
 const modalRef = ref(null)
@@ -160,107 +160,95 @@ const contentRef = ref(null)
 const works = [
   {
     id: 1,
-    title: 'Pattern of Identity｜形象之紋',
-    description: '精緻繁複之中，編織出專屬品牌的獨特靈魂。',
-    category: '品牌設計',
-    image: new URL('../assets/images/works/work-1.PNG', import.meta.url).href
-  },
-  {
-    id: 2,
     title: 'Echoes of Distraction｜分心的回聲',
     description: '以溫柔幽默描繪數位焦慮，喚醒專注與連結的價值。',
-    category: '電商設計',
+    category: '貼文設計',
     image: new URL('../assets/images/works/work-2.png', import.meta.url).href
   },
   {
-    id: 3,
+    id: 2,
     title: 'Swiped Away｜被滑走的專注力',
     description: '在科技洪流中，專注力悄悄被滑走。以輕盈筆觸描繪現代人的日常焦慮，呈現數位世界下的情緒流動。',
-    category: '品牌設計',
+    category: '貼文設計',
     image: new URL('../assets/images/works/work-4.png', import.meta.url).href
   },
   {
-    id: 4,
+    id: 3,
     title: 'A Bite of Dreams｜一口夢境',
     description: '用柔和筆觸打造療癒系視覺，讓品牌在日常中悄悄盛開。',
-    category: '社群設計',
+    category: '印刷品',
     image: new URL('../assets/images/works/work-3.png', import.meta.url).href
   },
-
   {
-    id: 5,
+    id: 4,
     title: 'The First Bite of Love｜初嚐戀愛的滋味',
     description: '熱情番茄、醇厚起司與新鮮羅勒，在炙熱爐火中共舞。每一口，都是經典瑪格麗特的純粹告白，為日常注入一抹溫柔而鮮明的悸動。',
-    category: '電商設計',
+    category: '貼文設計',
     image: new URL('../assets/images/works/work-7.png', import.meta.url).href
   },
   {
-    id: 6,
+    id: 5,
     title: 'Whispers of an Apple｜蘋果的呢喃',
     description: '一顆蘋果，藏著無數溫柔的想像。以輕盈手繪描摹自然，賦予日常物件新的詩意生命。',
-    category: '社群設計',
+    category: '印刷品',
     image: new URL('../assets/images/works/work-6.png', import.meta.url).href
   },
   {
-  id: 8,
-  title: 'Gravityless Touch｜無重力的輕盈瞬間',
-  description: '一拍貼合，宛如無重力般細緻服貼。輕盈粉體，將完美膚觸輕輕釋放，讓每一次上妝都如羽毛般無痕、自然綻放無瑕光采。',
-  category: '電商設計',
-  image: new URL('../assets/images/works/work-8.png', import.meta.url).href
- },
- {
-  id: 9,
-  title: 'A Day of Privilege｜專屬禮遇之日',
-  description: '在流光中，為摯愛品牌而來的日子。專屬會員禮遇，讓每一次選擇都值得被珍藏，限時珍貴，成就每一段不凡體驗。',
-  category: '電商設計',
-  image: new URL('../assets/images/works/work-9.png', import.meta.url).href
-},
-{
-  id: 10,
-  title: 'A Picnic of Light｜輕盈午後的野餐夢',
-  description: '在暖陽與微風中，甜點、笑聲與慵懶的片刻交織成畫。AI 筆觸下的小貓，戴著夏日微笑，在野餐墊上恣意伸展，喚醒每個人心中最柔軟的夏天。',
-  category: 'AI設計',
-  image: new URL('../assets/images/works/work-10.png', import.meta.url).href
-},
-{
-  id: 11,
-  title: 'Neon Pulse｜霓光脈搏的少女覺醒',
-  description: '在電光閃耀的世界裡，她以無畏之姿喚醒未來。霓虹與速度交織成新生代的節奏，每一個目光，都映照著無限可能的冒險啟程。',
-  category: 'AI設計',
-  image: new URL('../assets/images/works/work-11.jpg', import.meta.url).href
-},
-{
-  id: 12,
-  title: 'Festive Whispers｜節慶裡的微笑邀請',
-  description: '在日系紅燈籠與暖湯香氣中，拋飛飛鏢、分享一碗關東煮，用遊戲和味覺編織出最柔軟的相遇時光。每個笑聲，都讓冬日市集更加溫暖。',
-  category: '社群設計',
-  image: new URL('../assets/images/works/work-12.png', import.meta.url).href
-},
-{
-  id: 13,
-  title: 'Retro Reverie｜時光派對的倒數節奏',
-  description: '揉合復古情懷與青春律動，倒數的每一天，都是記憶裡最鮮明的片段。透過視覺節奏串連倒數、抽獎與感謝，讓社群互動在懷舊與期待間悄悄升溫。',
-  category: '社群設計',
-  image: new URL('../assets/images/works/work-13.png', import.meta.url).href
-},
-{
-  id: 14,
-  title: 'Retro Glitch｜嬉鬧復古的小宇宙',
-  description: '以粗顆粒筆觸與鮮明配色，捕捉復古派對裡的狂歡記憶。每一枚貼紙，都是一段不羈的呢喃，讓歡笑與懷舊情緒，在指尖悄悄發酵。',
-  category: '社群設計',
-  image: new URL('../assets/images/works/work-14.png', import.meta.url).href
-},
-{
-  id: 15,
-  title: 'Moments to Collect｜時光裡的微醺印記',
-  description: '以懷舊插畫搭配集點互動，將復古派對的溫度延伸至每一次舉杯、每一場笑語。設計讓參與者在集點中留下專屬於當晚的微醺記憶，凝結成獨一無二的節慶篇章。',
-  category: '社群設計',
-  image: new URL('../assets/images/works/work-15.png', import.meta.url).href
-}
-
-
-
-
+    id: 6,
+    title: 'Gravityless Touch｜無重力的輕盈瞬間',
+    description: '一拍貼合，宛如無重力般細緻服貼。輕盈粉體，將完美膚觸輕輕釋放，讓每一次上妝都如羽毛般無痕、自然綻放無瑕光采。',
+    category: '貼文設計',
+    image: new URL('../assets/images/works/work-8.png', import.meta.url).href
+  },
+  {
+    id: 7,
+    title: 'A Day of Privilege｜專屬禮遇之日',
+    description: '在流光中，為摯愛品牌而來的日子。專屬會員禮遇，讓每一次選擇都值得被珍藏，限時珍貴，成就每一段不凡體驗。',
+    category: '貼文設計',
+    image: new URL('../assets/images/works/work-9.png', import.meta.url).href
+  },
+  {
+    id: 8,
+    title: 'A Picnic of Light｜輕盈午後的野餐夢',
+    description: '在暖陽與微風中，甜點、笑聲與慵懶的片刻交織成畫。AI 筆觸下的小貓，戴著夏日微笑，在野餐墊上恣意伸展，喚醒每個人心中最柔軟的夏天。',
+    category: 'AI設計',
+    image: new URL('../assets/images/works/work-10.png', import.meta.url).href
+  },
+  {
+    id: 9,
+    title: 'Neon Pulse｜霓光脈搏的少女覺醒',
+    description: '在電光閃耀的世界裡，她以無畏之姿喚醒未來。霓虹與速度交織成新生代的節奏，每一個目光，都映照著無限可能的冒險啟程。',
+    category: 'AI設計',
+    image: new URL('../assets/images/works/work-11.jpg', import.meta.url).href
+  },
+  {
+    id: 10,
+    title: 'Festive Whispers｜節慶裡的微笑邀請',
+    description: '在日系紅燈籠與暖湯香氣中，拋飛飛鏢、分享一碗關東煮，用遊戲和味覺編織出最柔軟的相遇時光。每個笑聲，都讓冬日市集更加溫暖。',
+    category: '印刷品',
+    image: new URL('../assets/images/works/work-12.png', import.meta.url).href
+  },
+  {
+    id: 11,
+    title: 'Retro Reverie｜時光派對的倒數節奏',
+    description: '揉合復古情懷與青春律動，倒數的每一天，都是記憶裡最鮮明的片段。透過視覺節奏串連倒數、抽獎與感謝，讓社群互動在懷舊與期待間悄悄升溫。',
+    category: '印刷品',
+    image: new URL('../assets/images/works/work-13.png', import.meta.url).href
+  },
+  {
+    id: 12,
+    title: 'Retro Glitch｜嬉鬧復古的小宇宙',
+    description: '以粗顆粒筆觸與鮮明配色，捕捉復古派對裡的狂歡記憶。每一枚貼紙，都是一段不羈的呢喃，讓歡笑與懷舊情緒，在指尖悄悄發酵。',
+    category: '印刷品',
+    image: new URL('../assets/images/works/work-14.png', import.meta.url).href
+  },
+  {
+    id: 13,
+    title: 'Moments to Collect｜時光裡的微醺印記',
+    description: '以懷舊插畫搭配集點互動，將復古派對的溫度延伸至每一次舉杯、每一場笑語。設計讓參與者在集點中留下專屬於當晚的微醺記憶，凝結成獨一無二的節慶篇章。',
+    category: '印刷品',
+    image: new URL('../assets/images/works/work-15.png', import.meta.url).href
+  }
 ]
 
 const filteredWorks = computed(() => {

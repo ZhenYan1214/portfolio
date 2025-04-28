@@ -19,7 +19,7 @@
         <!-- Role Tag -->
         <div class="animate-fade-in" style="animation-delay: 0.1s">
           <span class="inline-block text-sm tracking-widest text-gray-400 font-light uppercase mb-4">
-            UI Designer & Visual Artist
+            平面設計
           </span>
         </div>
 
@@ -27,14 +27,15 @@
           class="text-4xl md:text-6xl lg:text-7xl font-display font-light tracking-wide text-primary mb-8 animate-fade-in"
           style="animation-delay: 0.2s"
         >
-          Where Beauty Meets Usability
+        設計，讓每個想法被看見
         </h1>
         
         <p 
           class="text-xl md:text-2xl text-secondary max-w-2xl mx-auto mb-12 animate-fade-in"
           style="animation-delay: 0.4s"
         >
-          UI Portfolio · Crafted with Intuition and Aesthetic Sense
+        這裡是我的小小作品集，
+        希望能透過設計，讓每個夢想成真！
         </p>
         
         <div class="flex justify-center space-x-4 animate-fade-in" style="animation-delay: 0.8s">
@@ -42,7 +43,7 @@
             to="/works" 
             class="btn-primary hover-lift hover-glow transform transition-all duration-500 hover:scale-105"
           >
-            View My Portfolio
+            Portfolio
           </router-link>
           <router-link 
             to="/about" 
@@ -126,9 +127,9 @@
           <!-- Close Button -->
           <button 
             @click="closeWorkDetail"
-            class="absolute -top-3 -right-3 z-10 p-2 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+            class="fixed top-4 right-4 z-50 p-3 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
           >
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
@@ -181,17 +182,16 @@ const contentRef = ref(null)
 const featuredWorks = [
   {
     id: 1,
-    title: '品牌識別設計',
-    description: '構築獨一無二的品牌語言，讓每個細節都傳遞價值。',
-    category: '品牌設計',
-    image: new URL('../assets/images/works/work-1.PNG', import.meta.url).href,
-    link: '#'
+    title: 'Gravityless Touch｜無重力的輕盈瞬間',
+    description: '一拍貼合，宛如無重力般細緻服貼。輕盈粉體，將完美膚觸輕輕釋放，讓每一次上妝都如羽毛般無痕、自然綻放無瑕光采。',
+    category: '貼文設計',
+    image: new URL('../assets/images/works/work-8.png', import.meta.url).href
   },
   {
     id: 2,
     title: '電商視覺設計',
     description: '以視覺說服，用美感引導消費，精準提升品牌力與轉換率。',
-    category: '電商設計',
+    category: '貼文設計',
     image: new URL('../assets/images/works/work-2.png', import.meta.url).href,
     link: '#'
   },
@@ -199,7 +199,7 @@ const featuredWorks = [
     id: 3,
     title: 'The First Bite of Love｜初嚐戀愛的滋味',
     description: '熱情番茄、醇厚起司與新鮮羅勒，在炙熱爐火中共舞。每一口，都是經典瑪格麗特的純粹告白，為日常注入一抹溫柔而鮮明的悸動。',
-    category: '電商設計',
+    category: '貼文設計',
     image: new URL('../assets/images/works/work-7.png', import.meta.url).href
   },
 ]
