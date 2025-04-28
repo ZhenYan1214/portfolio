@@ -232,7 +232,7 @@ const works = [
     id: 11,
     title: 'Retro Reverie｜時光派對的倒數節奏',
     description: '揉合復古情懷與青春律動，倒數的每一天，都是記憶裡最鮮明的片段。透過視覺節奏串連倒數、抽獎與感謝，讓社群互動在懷舊與期待間悄悄升溫。',
-    category: '印刷品',
+    category: '貼文設計',
     image: new URL('../assets/images/works/work-13.png', import.meta.url).href
   },
   {
@@ -246,7 +246,7 @@ const works = [
     id: 13,
     title: 'Moments to Collect｜時光裡的微醺印記',
     description: '以懷舊插畫搭配集點互動，將復古派對的溫度延伸至每一次舉杯、每一場笑語。設計讓參與者在集點中留下專屬於當晚的微醺記憶，凝結成獨一無二的節慶篇章。',
-    category: '貼文設計',
+    category: '印刷品',
     image: new URL('../assets/images/works/work-15.png', import.meta.url).href
   }
 ]
