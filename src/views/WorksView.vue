@@ -246,7 +246,7 @@ const works = [
     id: 13,
     title: 'Moments to Collect｜時光裡的微醺印記',
     description: '以懷舊插畫搭配集點互動，將復古派對的溫度延伸至每一次舉杯、每一場笑語。設計讓參與者在集點中留下專屬於當晚的微醺記憶，凝結成獨一無二的節慶篇章。',
-    category: '印刷品',
+    category: '貼文設計',
     image: new URL('../assets/images/works/work-15.png', import.meta.url).href
   }
 ]
