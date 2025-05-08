@@ -1,31 +1,23 @@
-# 🎱 Magic 8 Ball - Fortune Teller
+# 🚀 Portfolio Website
 
-> **A playful yet elegant Magic 8 Ball experience, reimagined with clean code and thoughtful interaction.**
-
----
-
-## 🌟 Introduction
-
-Welcome to the **Magic 8 Ball** project — a modern reinterpretation of the classic fortune-telling toy from the 1940s.  
-This web-based version allows users to ask any Yes/No question and instantly receive a randomized, witty, or mysterious response.
-
-Designed with **minimalism** and **user-centered interaction** in mind, this project blends playful creativity with clean programming practices.
+> **A modern, elegant, and fully responsive portfolio website built with Vue 3, Vite, and Tailwind CSS.**
 
 ---
 
-## 📜 Features
+## 📖 Introduction
 
-- 🧠 **Ask Anything**: Input any Yes/No question and receive a unique fortune.
-- 🎲 **Randomized Answers**: Every run generates a fresh, unexpected response from a curated set of classic Magic 8 Ball phrases.
-- 🎨 **Minimalistic Experience**: A focus on simplicity, clarity, and responsiveness.
-
----
-
-## 💻 Technologies Used
-
-- **JavaScript** — Core logic for random selection and user input.
-- **HTML5** — (Optional) For basic page structure if expanded into a full web app.
-- **CSS3** — (Future enhancement) For visual polish and animation.
+Welcome to my **Portfolio Website** project — thoughtfully crafted to showcase personal works, projects, and contact information in a sleek, minimalistic style.  
+Designed with modular components and clean architecture, this site highlights both frontend proficiency and design aesthetics.
 
 ---
-t clone https://github.com/your-username/magic-8-ball.git
+
+## 🛠️ Tech Stack
+
+| Technology | Description |
+|:-----------|:------------|
+| [Vue 3](https://vuejs.org/) | Progressive JavaScript framework for building user interfaces |
+| [Vite](https://vitejs.dev/) | Lightning-fast build tool and development server |
+| [Tailwind CSS](https://tailwindcss.com/) | Utility-first CSS framework for custom UI design |
+| [Vue Router](https://router.vuejs.org/) | Client-side routing for seamless navigation |
+
+---
