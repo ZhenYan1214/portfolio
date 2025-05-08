@@ -248,6 +248,76 @@ const works = [
     description: '以懷舊插畫搭配集點互動，將復古派對的溫度延伸至每一次舉杯、每一場笑語。設計讓參與者在集點中留下專屬於當晚的微醺記憶，凝結成獨一無二的節慶篇章。',
     category: '印刷品',
     image: new URL('../assets/images/works/work-15.png', import.meta.url).href
+  },
+  {
+  id: 14,
+  title: 'Journey to Tranquility｜一場身心放鬆的靜謐旅程',
+  description: '在溫暖木色與日式圓窗間，展開一場與自己對話的旅程。每一寸細節，都是對身心溫柔的擁抱，讓心靈在靜謐中悄悄舒展。',
+  category: '貼文設計',
+  image: new URL('../assets/images/works/work-16.png', import.meta.url).href
+  },
+  {
+  id: 15,
+  title: 'Artisan’s Touch｜指尖流轉的溫柔工藝',
+  description: '以職人精神雕琢每一寸肌理，從掌心至指尖，細膩地釋放壓力與疲憊。每一次觸感，都是對身體最真誠的聆聽與安撫。',
+  category: '貼文設計',
+  image: new URL('../assets/images/works/work-17.png', import.meta.url).href
+  },
+  {
+  id: 16,
+  title: 'Moments of Healing｜專屬於你的療癒時光',
+  description: '揉合傳統技藝與現代呵護，為每一次舒壓注入新意。從汗蒸溫熱到細膩按摩，層層堆疊出的，不只是放鬆，更是一場專屬於你的珍貴儀式。',
+  category: '貼文設計',
+  image: new URL('../assets/images/works/work-18.png', import.meta.url).href
+  },
+  {
+  id: 17,
+  title: 'Prism Secrets｜小五星的秘密公式',
+  description: '跳脫直覺陷阱，讓數學思考更有節奏感。以活潑圖解喚醒邏輯之美，將枯燥公式化為趣味冒險，為孩子打開通往數學小宇宙的大門。',
+  category: '貼文設計',
+  image: new URL('../assets/images/works/work-19.png', import.meta.url).href
+  },
+  {
+  id: 18,
+  title: 'Exam Glow-Up｜王Sir的考前魔法課',
+  description: '在限時45分鐘裡，濃縮考點精華與獨門技巧，像是一場為未來鋪路的小型冒險。每一個轉身，都是為成長點亮的微光。',
+  category: '貼文設計',
+  image: new URL('../assets/images/works/work-20.png', import.meta.url).href
+  },
+  {
+  id: 19,
+  title: 'Guidance for New Beginnings｜外傭面試的溫暖起點',
+  description: '在輕鬆對談中，為未來共處的每一日奠定溫柔基礎。以專業與理解，協助彼此找到最適合的頻率，開啟一段相互成就的旅程。',
+  category: '貼文設計',
+  image: new URL('../assets/images/works/work-21.png', import.meta.url).href
+  },
+  {
+  id: 20,
+  title: 'Steps to Shine｜為夢想鋪路的特訓節奏',
+  description: '精心設計的課程節奏，讓孩子們在步步踏實中找到自信的節拍。高效解題、重點突破，讓成績成為努力的最溫暖見證。',
+  category: '貼文設計',
+  image: new URL('../assets/images/works/work-22.png', import.meta.url).href
+  },
+  {
+  id: 21,
+  title: 'Rhythm of Progress｜學習成長的黃金時光',
+  description: '在每一個夜晚與清晨，用堅持與汗水雕刻未來。特訓班的節奏，不只是分數的提升，更是孩子自我超越的低語與承諾。',
+  category: '貼文設計',
+  image: new URL('../assets/images/works/work-23.png', import.meta.url).href
+  },
+  {
+  id: 22,
+  title: 'Harmony in Care｜僱傭關係的小小心意',
+  description: '從理解與尊重出發，在溫暖的對話中建立信任。提前協議休息日與工作時間，讓每一段合作關係，都在心意交織中自然生長。',
+  category: '貼文設計',
+  image: new URL('../assets/images/works/work-24.png', import.meta.url).href
+  },
+  {
+  id: 23,
+  title: 'A Gentle Agreement｜為彼此保留柔軟的空間',
+  description: '尊重每一份期待，珍惜每一段陪伴。從靈活安排休息日開始，讓理解與體諒成為僱傭關係中最溫柔的默契。',
+  category: '貼文設計',
+  image: new URL('../assets/images/works/work-25.png', import.meta.url).href
   }
 ]
 

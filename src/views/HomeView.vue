@@ -196,11 +196,11 @@ const featuredWorks = [
     link: '#'
   },
   {
-    id: 3,
-    title: 'The First Bite of Love｜初嚐戀愛的滋味',
-    description: '熱情番茄、醇厚起司與新鮮羅勒，在炙熱爐火中共舞。每一口，都是經典瑪格麗特的純粹告白，為日常注入一抹溫柔而鮮明的悸動。',
+    id: 15,
+    title: 'Artisan’s Touch｜指尖流轉的溫柔工藝',
+    description: '以職人精神雕琢每一寸肌理，從掌心至指尖，細膩地釋放壓力與疲憊。每一次觸感，都是對身體最真誠的聆聽與安撫。',
     category: '貼文設計',
-    image: new URL('../assets/images/works/work-7.png', import.meta.url).href
+    image: new URL('../assets/images/works/work-17.png', import.meta.url).href
   },
 ]
 
